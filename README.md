@@ -41,3 +41,9 @@ Before you start working, you need to create a file in the root of your project:
 Initial release of pytest-path
 
 ---
+
+### 0.0.2
+
+Add logo image for extension preview
+
+---
