@@ -1,0 +1,14 @@
+{
+  "commentTranslate.description": "Инструмент для удобного копирования путей к python тестам",
+  "commentTranslate.command.copyPathToPytestClassStatement": "Скопировать команду запуска pytest",
+  "commentTranslate.command.copyPathToUnittestClassStatement": "Скопировать команду запуска unittest",
+  "commentTranslate.command.copyImportStatement": "Скопировать команду импорта",
+  "commentTranslate.command.copyPointPathToObjectStatement": "Скопировать точечный путь к объекту",
+  "commentTranslate.configuration.title": "Конфигурация для настройки копирования путей к python тестам для вашего проекта",
+  "commentTranslate.configuration.workspaceFolder": "Стартовая директория в которую будет совершен переход с помощью команды cd перед запуском тестовой команды",
+  "commentTranslate.configuration.testCommandUnittest": "Команда которая будет использоваться при копировании тестовой команды Unittest",
+  "commentTranslate.configuration.testCommandPytest": "Команда которая будет использоваться при копировании тестовой команды Pytest",
+  "commentTranslate.configuration.postfixCommand": "Команда которая будет добавлена в самом конце основной команды",
+  "commentTranslate.configuration.pythonPathLevel": "Начиная с корня (папки рабочей области, папка в которой открыт vscode) проекта, с какого уровня должна начинаться строка пути python",
+  "commentTranslate.configuration.excludePytestXdistFromCmd": "Исключить флаг -n <workers> из команды, если он был передан, при запуске одной функции или одного метода через pytest, для повышения скорости выполнения теста"
+}

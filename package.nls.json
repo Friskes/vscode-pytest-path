@@ -1,0 +1,14 @@
+{
+  "commentTranslate.description": "A tool for easily copying paths to python tests",
+  "commentTranslate.command.copyPathToPytestClassStatement": "Copy the command to run the pytest",
+  "commentTranslate.command.copyPathToUnittestClassStatement": "Copy the command to run the unittest",
+  "commentTranslate.command.copyImportStatement": "Copy the import statement",
+  "commentTranslate.command.copyPointPathToObjectStatement": "Copy a point path to an object",
+  "commentTranslate.configuration.title": "Configuration for configuring copying paths to python tests for your project",
+  "commentTranslate.configuration.workspaceFolder": "The starting directory to which you will navigate using the cd command before running the test command",
+  "commentTranslate.configuration.testCommandUnittest": "The command to be used when copying the Unittest test command",
+  "commentTranslate.configuration.testCommandPytest": "The command to be used when copying the Pytest test command",
+  "commentTranslate.configuration.postfixCommand": "The command that will be added at the very end of the main command",
+  "commentTranslate.configuration.pythonPathLevel": "Starting from the root (workspace folder, folder where vscode is open) of the project, at which level should the python path string start",
+  "commentTranslate.configuration.excludePytestXdistFromCmd": "Exclude the -n <workers> flag from the command, if it was passed, when running one function or one method via pytest, to increase the speed of the test"
+}

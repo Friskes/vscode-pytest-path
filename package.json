@@ -1,0 +1,192 @@
+{
+  "name": "pytest-path",
+  "displayName": "Pytest path",
+  "description": "%commentTranslate.description%",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Formatters",
+    "Other",
+    "Extension Packs"
+  ],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./extension.js",
+  "autoUpdate": false,
+  "galleryBanner": {
+    "color": "#1e415e",
+    "theme": "dark"
+  },
+  "publisher": "Friskes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Friskes/vscode-pytest-path.git"
+  },
+  "keywords": [
+    "test",
+    "pytest",
+    "unittest",
+    "python"
+  ],
+  "contributors": [],
+  "contributes": {
+    "configuration": {
+      "title": "%commentTranslate.configuration.title%",
+      "properties": {
+        "pytestPath.workspaceFolder": {
+          "type": "string",
+          "default": "",
+          "description": "%commentTranslate.configuration.workspaceFolder%"
+        },
+        "pytestPath.testCommandUnittest": {
+          "type": "string",
+          "default": "python manage.py test",
+          "description": "%commentTranslate.configuration.testCommandUnittest%"
+        },
+        "pytestPath.testCommandPytest": {
+          "type": "string",
+          "default": "pytest",
+          "description": "%commentTranslate.configuration.testCommandPytest%"
+        },
+        "pytestPath.postfixCommand": {
+          "type": "string",
+          "default": "",
+          "description": "%commentTranslate.configuration.postfixCommand%"
+        },
+        "pytestPath.pythonPathLevel": {
+          "type": "integer",
+          "default": 2,
+          "description": "%commentTranslate.configuration.pythonPathLevel%"
+        },
+        "pytestPath.excludePytestXdistFromCmd": {
+          "type": "boolean",
+          "default": true,
+          "description": "%commentTranslate.configuration.excludePytestXdistFromCmd%"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.copyPointPathToObjectStatement",
+        "title": "%commentTranslate.command.copyPointPathToObjectStatement%",
+        "when": "resourceLangId == python"
+      },
+      {
+        "command": "extension.copyPathToUnittestClassStatement",
+        "title": "%commentTranslate.command.copyPathToUnittestClassStatement%",
+        "when": "resourceLangId == python"
+      },
+      {
+        "command": "extension.copyPathToPytestClassStatement",
+        "title": "%commentTranslate.command.copyPathToPytestClassStatement%",
+        "when": "resourceLangId == python"
+      },
+      {
+        "command": "extension.copyImportStatement",
+        "title": "%commentTranslate.command.copyImportStatement%",
+        "when": "resourceLangId == python"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extension.copyPointPathToObjectStatement",
+          "group": "9_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPointPathToObjectStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyPathToUnittestClassStatement",
+          "group": "9_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPathToUnittestClassStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyPathToPytestClassStatement",
+          "group": "9_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPathToPytestClassStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyImportStatement",
+          "group": "9_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyImportStatement%",
+          "when": "resourceLangId == python"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "extension.copyPointPathToObjectStatement",
+          "group": "1_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPointPathToObjectStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyPathToUnittestClassStatement",
+          "group": "1_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPathToUnittestClassStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyPathToPytestClassStatement",
+          "group": "1_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPathToPytestClassStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyImportStatement",
+          "group": "1_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyImportStatement%",
+          "when": "resourceLangId == python"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "extension.copyPointPathToObjectStatement",
+          "group": "5_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPointPathToObjectStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyPathToUnittestClassStatement",
+          "group": "5_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPathToUnittestClassStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyPathToPytestClassStatement",
+          "group": "5_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyPathToPytestClassStatement%",
+          "when": "resourceLangId == python"
+        },
+        {
+          "command": "extension.copyImportStatement",
+          "group": "5_cutcopypaste@30000",
+          "title": "%commentTranslate.command.copyImportStatement%",
+          "when": "resourceLangId == python"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "dependencies": {
+    "clipboardy": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
