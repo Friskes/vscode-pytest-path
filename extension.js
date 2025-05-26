@@ -15,7 +15,7 @@ function getWorkspaceFolderPath() {
     const workspaceFolder = vscode.workspace.workspaceFolders?.[0];
     const nestedWorkspaceFolder = getNestedWorkspaceFolder();
     if (nestedWorkspaceFolder) {
-        return `${workspaceFolder.uri.fsPath}\\${nestedWorkspaceFolder}; `;
+        return `${workspaceFolder.uri.fsPath}${path.sep}${nestedWorkspaceFolder}; `;
     }
     return `${workspaceFolder.uri.fsPath}; `;
 }

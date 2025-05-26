@@ -2,8 +2,8 @@
   "name": "pytest-path",
   "displayName": "Pytest path",
   "description": "%commentTranslate.description%",
-  "version": "0.0.2",
-  "icon": "icon.png",
+  "version": "0.0.5",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.100.0"
   },
