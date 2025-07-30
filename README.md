@@ -65,3 +65,9 @@ Ignore unused files and dirs from extension
 Return node_modules dependencies
 
 ---
+
+### 0.0.6
+
+Fix bug with three : char in pytest path
+
+---

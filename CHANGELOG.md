@@ -19,3 +19,7 @@
 ### 0.0.5
 
 - Return node_modules dependencies
+
+### 0.0.6
+
+- Fix bug with three : char in pytest path
