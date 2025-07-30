@@ -120,6 +120,8 @@ function parseSelections(selectionsSplitter, function_only = false) {
                             .lineAt(start.line)
                             .text.startsWith("	");  // 1 tab
 
+                    _class = _class.trimEnd()
+
                     if (!_class || !is_class_method) {
                         var className = "";
                         selectionsSplitter = "";
@@ -127,8 +129,8 @@ function parseSelections(selectionsSplitter, function_only = false) {
                         var className = _class.split(" ")[1].split("(")[0];
                     }
 
-                    if (className[className.length - 2] === ":") {
-                        className = className.slice(0, className.length - 2);
+                    if (className.endsWith(":")) {
+                        className = className.slice(0, -1);
                     }
 
                     className = className + selectionsSplitter;
