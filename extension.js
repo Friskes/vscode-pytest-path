@@ -120,7 +120,9 @@ function parseSelections(selectionsSplitter, function_only = false) {
                             .lineAt(start.line)
                             .text.startsWith("	");  // 1 tab
 
-                    _class = _class.trimEnd()
+                    if (_class) {
+                        _class = _class.trimEnd()
+                    }
 
                     if (!_class || !is_class_method) {
                         var className = "";

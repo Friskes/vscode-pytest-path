@@ -71,3 +71,9 @@ Return node_modules dependencies
 Fix bug with three : char in pytest path
 
 ---
+
+### 0.0.7
+
+Fix bug with pytest test function
+
+---

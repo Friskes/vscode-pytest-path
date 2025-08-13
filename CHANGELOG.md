@@ -23,3 +23,7 @@
 ### 0.0.6
 
 - Fix bug with three : char in pytest path
+
+### 0.0.7
+
+- Fix bug with pytest test function
